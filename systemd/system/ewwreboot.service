@@ -1,0 +1,8 @@
+[Unit]
+Description=Prevent arek arek to touch this thing.
+
+[Service]
+ExecStart=/usr/bin/reboot
+
+[Install]
+Alias=ewwreboot.service

@@ -1,0 +1,8 @@
+[Unit]
+Description=Prevent arek arek to touch this thing.
+
+[Service]
+ExecStart=/usr/bin/bash /usr/bin/tryewwlogout
+
+[Install]
+Alias=ewwlogout.service

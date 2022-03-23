@@ -1,0 +1,7 @@
+(defvar revealSpotify false)
+(defvar revealDocker false)
+(defvar revealGithub false)
+(defvar revealVolume false)
+(defvar revealBrightness false)
+(defvar revealPower false)
+(defvar revealNotify false)

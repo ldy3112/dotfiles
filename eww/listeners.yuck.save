@@ -1,0 +1,13 @@
+(deflisten music
+  :initial ""
+  :onchange "eww update revealSpotify=true && sleep 5 && eww update revealSpotify=false"
+  "playerctl --follow metadata --format '{{ artist }} - {{ title }}' || true")
+
+(deflisten musicStatus "playerctl --follow status || true")
+
+(deflisten workspace "watch -n.1 'sh /home/hiyo/.config/eww/update-workspaces.sh'")
+
+(deflisten notifications
+  :initial ""
+  :onchange "eww update revealNotify=true && sleep 5 && eww update revealNotify=false"
+  "notification-listener")
