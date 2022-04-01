@@ -11,7 +11,7 @@
 
 (defwidget bottombar []
   (centerbox :orientation "h"
-    (box :orientation "h" :space-evenly false )
+    (box :orientation "h" :space-evenly false (clock))
     (box :orientation "h" :space-evenly false (workspaces_dynamic))
     (rightside)
   )
@@ -60,7 +60,6 @@
     (box :orientation "h" :space-evenly false :halign "end"
       (usages)
       (music)
-      (clock)
       (volume)
       (brightness)
       (powermenu)
