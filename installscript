@@ -1,0 +1,19 @@
+sudo pacman -S --noconfirm git
+git clone https://aur.archlinux.org/yay-bin.git
+cd yay-bin && sudo makepkg -si
+cd ../ && sudo rm yay-bin
+yay -S --noconfirm i3-gaps rofi eww-git picom-jonaburg exo garcon libxfce4ui libxfce4util parole thunar thunar-volman tumbler xfce4-appfinder xfce4-notifyd xfce4-panel xfce4-power-manager xfce4-pulseaudio-plugin xfce4-screenshooter xfce4-session xfce4-settings xfce4-terminal xfconf xfdesktop xfwm4 xfwm4-themes nitrogen gtk-engine-murrine zsh-theme-powerlevel10k zsh wmctrl
+git clone https://github.com/ldy3112/dotfiles
+sudo mv ./dotfiles/EditedThemes/ZorinPink-* /usr/share/themes && sudo tar xzvf /usr/share/themes/ZorinPink-Dark.tar.gz && sudo tar xvzf /usr/share/ZorinPink-Light.tar.gz
+sudo mv ./dotfiles/EditedIcons/ZorinPink-* /usr/share/icons && sudo tar xvzf /usr/share/icons/ZorinPink-Light.tar.gz && sudo tar xvzf /usr/share/icons/ZorinPink-Dark.tar.gz
+cd ./dotfiles/
+mv ./zsh/* ~/ && rm -r ./zsh
+sudo mv ./systemd/* /usr/lib/systemd/ && rm -r ./systemd
+sudo mv ./exec/* /usr/bin/ && rm -r ./exec
+sudo mv ./picom-jonaburg/* /etc/xdg/ && rm -r ./picom-jonaburg
+sudo mv ./fonts/* /usr/share/fonts/ && rm -r ./fonts
+mv ./i3 ./eww ~/.config/
+mkdir ~/Pictures
+mv ./wallpaper ~/Pictures/Wallpaper
+cd ../
+sudo rm -r ./dotfiles
