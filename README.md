@@ -10,5 +10,4 @@ Changelogs:
 - Added Pink Theme based on Zorin Themes and Icons
 
 3.0 (28 May 2022)
-- Added install script for Arch based distro
 - Added my currently used wallpaper (Source coming soon)
