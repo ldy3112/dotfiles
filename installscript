@@ -1,7 +1,7 @@
 sudo pacman -S --noconfirm git
 git clone https://aur.archlinux.org/yay-bin.git
-cd yay-bin && sudo makepkg -si
-cd ../ && sudo rm yay-bin
+cd yay-bin && makepkg -si
+cd ../ && sudo rm -r yay-bin
 yay -S --noconfirm i3-gaps rofi eww-git picom-jonaburg exo garcon libxfce4ui libxfce4util parole thunar thunar-volman tumbler xfce4-appfinder xfce4-notifyd xfce4-panel xfce4-power-manager xfce4-pulseaudio-plugin xfce4-screenshooter xfce4-session xfce4-settings xfce4-terminal xfconf xfdesktop xfwm4 xfwm4-themes nitrogen gtk-engine-murrine zsh-theme-powerlevel10k zsh wmctrl
 git clone https://github.com/ldy3112/dotfiles
 sudo mv ./dotfiles/EditedThemes/ZorinPink-* /usr/share/themes && sudo tar xzvf /usr/share/themes/ZorinPink-Dark.tar.gz && sudo tar xvzf /usr/share/ZorinPink-Light.tar.gz
