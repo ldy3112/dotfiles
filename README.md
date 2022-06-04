@@ -6,4 +6,4 @@ Changelogs:
 - Moving from Xorg to Wayland
 - Hypr choosen
 
-Need clipboard manager, editing playerctl bindings
+Need clipboard manager, editing playerctl bindings, colour uniforming
