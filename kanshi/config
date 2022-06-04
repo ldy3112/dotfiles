@@ -1,0 +1,7 @@
+profile {
+	output eDP-1 enable
+	output HDMI-A-1 mode 1024x768 position 1366,0
+}
+profile {
+	output eDP-1 enable
+}
