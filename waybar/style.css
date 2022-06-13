@@ -1,0 +1,226 @@
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: "FontAwesome 6 Free", sans-serif;
+    font-size: 13px;
+    border-radius: 15px;
+    padding: 5px 0px 5px 5px;
+    /* --prim   --sec   --text:#fd22cd; */
+}
+
+window#waybar {
+    background-color: rgba(0, 48, 59, 0);
+    /* border-bottom: 3px solid rgba(100, 114, 125, 0.5); */
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+/*
+window#waybar.empty {
+    nt;
+}
+window#waybar.solo {
+    }
+*/
+
+window#waybar.termite {}
+
+window#waybar.chromium {
+    border: none;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    background-color: transparent;
+    /* Use box-shadow instead of border so the text isn't offset */
+    box-shadow: inset 0 -3px transparent;
+    /* Avoid rounded borders under each workspace name */
+    border: none;
+    border-radius: 0;
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+#workspaces button:hover {
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 -3px #ffffff;
+}
+
+#workspaces button.focused {
+    box-shadow: inset 0 -3px #ffffff;
+}
+
+#workspaces button.urgent {}
+
+#mode {
+    border-bottom: 3px solid #ffffff;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#custom-waybar-mpris,
+#mpd {
+    padding: 10px 0px 10px 1px;
+    background-color: white;
+    color: #fd22cd;
+    border: solid rgba(253, 34, 205,0.7) 2px
+}
+
+#window,
+#workspaces {
+    margin: 0 4px;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left>widget:first-child>#workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right>widget:last-child>#workspaces {
+    margin-right: 0;
+}
+
+#clock {
+    margin: 0 0 0 2px;
+}
+
+#battery {}
+
+#battery.charging,
+#battery.plugged {}
+
+@keyframes blink {
+    to {}
+}
+
+#battery.critical:not(.charging) {
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+label:focus {}
+
+#cpu {
+    border-radius: 15px 0 0 15px;
+    margin-top: 2px;
+}
+
+#memory {
+    border-radius: 0;
+}
+
+#temperature {
+    border-radius: 0;
+    border-radius: 0 15px 15px 0;
+    margin-bottom: 2px;
+}
+
+#temperature.critical {
+    border-radius: 0 15px 15px 0;
+    margin-bottom: 2px;
+}
+
+#disk {}
+
+#backlight {
+    margin: 2px 0px;
+}
+
+#network {
+    margin: 2px 0px;
+}
+
+#network.disconnected {
+    margin: 2px 0px;
+    color: red;
+}
+
+#pulseaudio {
+    padding: 10px 0 12px 6px;
+    margin: 2px 0px;
+}
+
+#pulseaudio.muted {}
+
+#custom-media {
+    min-width: 100px;
+}
+
+#custom-media.custom-spotify {}
+
+#custom-media.custom-vlc {}
+
+#custom-waybar-mpris {
+    margin: 2px 0px;
+}
+
+#tray {
+    margin: 0px 0px;
+    padding: 5px 5px 5px 0px;
+}
+
+#tray>.passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray>.needs-attention {
+    -gtk-icon-effect: highlight;
+}
+
+#idle_inhibitor {}
+
+#idle_inhibitor.activated {}
+
+#mpd {}
+
+#mpd.disconnected {}
+
+#mpd.stopped {}
+
+#mpd.paused {}
+
+#language {
+    background: #00b093;
+    padding: 0 5px;
+    margin: 0 5px;
+    min-width: 16px;
+}
+
+#keyboard-state {
+    background: #97e1ad;
+    padding: 0 0px;
+    margin: 0 5px;
+    min-width: 16px;
+}
+
+#keyboard-state>label {
+    padding: 0 5px;
+}
+
+#keyboard-state>label.locked {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#clock,
+#custom-waybar-mpris {
+    font-family: "FantasqueSansMono Nerd Font Mono";
+}
+
+#custom-waybar-mpris { padding: 5px 0px 10px 1px;}

@@ -1,8 +1,0 @@
-[Unit]
-Description=Prevent arek arek to touch this thing.
-
-[Service]
-ExecStart=/usr/bin/poweroff
-
-[Install]
-Alias=ewwpoweroff.service

@@ -1,1 +1,0 @@
-sleep 5 && trayer --SetDockType false --transparent false --alpha 0 --widthtype request --align left --margin 75 --distancefrom bottom --distance -10 --height 22 --padding 8 --iconspacing 5

@@ -1,8 +1,0 @@
-[Unit]
-Description=Workspace Listener.
-
-[Service]
-ExecStart=/usr/bin/bash /home/hiyo/.config/eww/workspacelistener.sh
-
-[Install]
-Alias=worksp.service

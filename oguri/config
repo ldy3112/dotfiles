@@ -1,0 +1,11 @@
+[output eDP-1]
+image=/home/hiyo/Videos/Downloaded/extrup.png
+filter=nearest
+scaling-mode=fill
+anchor=center
+
+[output HDMI-A-1]
+image=/home/hiyo/Videos/Downloaded/extrup.png
+filter=nearest
+scaling-mode=fill
+anchor=center

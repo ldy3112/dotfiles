@@ -1,2 +1,0 @@
-#!/bin/bash
-mv -t "/home/hiyo/Pictures/Screenshots" "$1"
