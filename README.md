@@ -7,3 +7,4 @@ Changelogs:
 - Hyprland choosen
 
 Need clipboard manager, editing playerctl bindings, colour uniforming
+
