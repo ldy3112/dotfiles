@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=brogit dark n clean Theme
+Description=A theme that features a red debian logo and progress bar with customizable background
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/brogit-plymouth-theme
+ScriptFile=/usr/share/plymouth/themes/brogit-plymouth-theme/brogit-plymouth-theme.script
