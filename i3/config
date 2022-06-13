@@ -16,7 +16,8 @@ exec xrandr --newmode "1368x768_80.00"  118.00  1368 1456 1600 1832  768 771 781
 exec_always xrandr --addmode eDP 1368x768_80.00
 exec_always xrandr --output eDP --mode 1368x768_80.00
 exec_always xrandr --output eDP --set TearFree on
-exec trayer --SetDockType false --transparent false --alpha 0 --widthtype request --align left --margin 10 --distancefrom bottom --distance -10 --height 22 --padding 8 --iconspacing 5
+exec starttrayer
+exec connman-gtk
 exec --no-startup-id lxpolkit
 exec --no-startup-id light-locker
 exec eww open bottombar && sleep 1 && systemctl --user start worksp
@@ -230,10 +231,10 @@ bindsym $mod+r mode "resize"
 #	}
 #}
 
-set $bg-color 	         #f7f7f7
-set $inactive-bg-color   #e8e8e8
-set $text-color          #494f55
-set $inactive-text-color #535f6a
+set $bg-color 	         #291e27
+set $inactive-bg-color   #8a6f88
+set $text-color          #fbbdef
+set $inactive-text-color #fbbdef
 set $urgent-bg-color     #E53935
 
 # window colors
