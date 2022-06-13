@@ -8,3 +8,5 @@ Changelogs:
 
 Need clipboard manager, editing playerctl bindings, colour uniforming
 
+2.0 (13 June 2022)
+- Fixed mostly everything
