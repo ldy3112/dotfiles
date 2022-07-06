@@ -73,10 +73,10 @@ window#waybar.chromium {
 #idle_inhibitor,
 #custom-waybar-mpris,
 #mpd {
-    padding: 10px 0px 10px 1px;
-    background-color: white;
-    color: #fd22cd;
-    border: solid rgba(253, 34, 205,0.7) 2px
+    padding: 10px 0px 10px 0px;
+    background-color: rgba(255, 255, 255, 0.702);
+    color: #FA4444;
+    border: solid #FCA2A2 2px
 }
 
 #window,
@@ -95,7 +95,7 @@ window#waybar.chromium {
 }
 
 #clock {
-    margin: 0 0 0 2px;
+    margin: 2px 0 0 2px;
 }
 
 #battery {}
@@ -141,6 +141,7 @@ label:focus {}
 
 #backlight {
     margin: 2px 0px;
+    font-size: 20px;
 }
 
 #network {
@@ -153,7 +154,7 @@ label:focus {}
 }
 
 #pulseaudio {
-    padding: 10px 0 12px 6px;
+    padding: 10px 0 12px 4px;
     margin: 2px 0px;
 }
 
@@ -168,6 +169,7 @@ label:focus {}
 #custom-media.custom-vlc {}
 
 #custom-waybar-mpris {
+    
     margin: 2px 0px;
 }
 

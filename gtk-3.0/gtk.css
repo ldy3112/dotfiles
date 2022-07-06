@@ -3,3 +3,4 @@ decoration, decoration:backdrop, window {
   border: none;
   margin: 0;
 }
+VteTerminal, vte-terminal {padding: 15px;}
