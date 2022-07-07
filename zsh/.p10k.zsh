@@ -155,7 +155,7 @@
   if [[ $POWERLEVEL9K_MULTILINE_FIRST_PROMPT_GAP_CHAR != ' ' ]]; then
     # The color of the filler. You'll probably want to match the color of POWERLEVEL9K_MULTILINE
     # ornaments defined above.
-    typeset -g POWERLEVEL9K_MULTILINE_FIRST_PROMPT_GAP_FOREGROUND=204
+    typeset -g POWERLEVEL9K_MULTILINE_FIRST_PROMPT_GAP_FOREGROUND=014
     # Start filler from the edge of the screen if there are no left segments on the first line.
     typeset -g POWERLEVEL9K_EMPTY_LINE_LEFT_PROMPT_FIRST_SEGMENT_END_SYMBOL='%{%}'
     # End filler on the edge of the screen if there are no right segments on the first line.
@@ -183,8 +183,8 @@
 
   #################################[ os_icon: os identifier ]##################################
   # OS identifier color.
-  typeset -g POWERLEVEL9K_OS_ICON_FOREGROUND=198
-  typeset -g POWERLEVEL9K_OS_ICON_BACKGROUND=253
+  typeset -g POWERLEVEL9K_OS_ICON_FOREGROUND=014
+  typeset -g POWERLEVEL9K_OS_ICON_BACKGROUND=006
   # Custom icon.
   # typeset -g POWERLEVEL9K_OS_ICON_CONTENT_EXPANSION='⭐'
 
@@ -192,9 +192,9 @@
   # Transparent background.
   typeset -g POWERLEVEL9K_PROMPT_CHAR_BACKGROUND=
   # Green prompt symbol if the last command succeeded.
-  typeset -g POWERLEVEL9K_PROMPT_CHAR_OK_{VIINS,VICMD,VIVIS,VIOWR}_FOREGROUND=204
+  typeset -g POWERLEVEL9K_PROMPT_CHAR_OK_{VIINS,VICMD,VIVIS,VIOWR}_FOREGROUND=014
   # Red prompt symbol if the last command failed.
-  typeset -g POWERLEVEL9K_PROMPT_CHAR_ERROR_{VIINS,VICMD,VIVIS,VIOWR}_FOREGROUND=198
+  typeset -g POWERLEVEL9K_PROMPT_CHAR_ERROR_{VIINS,VICMD,VIVIS,VIOWR}_FOREGROUND=014
   # Default prompt symbol.
   typeset -g POWERLEVEL9K_PROMPT_CHAR_{OK,ERROR}_VIINS_CONTENT_EXPANSION='❯'
   # Prompt symbol in command vi mode.
@@ -213,21 +213,21 @@
 
   ##################################[ dir: current directory ]##################################
   # Current directory background color.
-  typeset -g POWERLEVEL9K_DIR_BACKGROUND=204
+  typeset -g POWERLEVEL9K_DIR_BACKGROUND=014
   # Default current directory foreground color.
-  typeset -g POWERLEVEL9K_DIR_FOREGROUND=254
+  typeset -g POWERLEVEL9K_DIR_FOREGROUND=006
   # If directory is too long, shorten some of its segments to the shortest possible unique
   # prefix. The shortened directory can be tab-completed to the original.
   typeset -g POWERLEVEL9K_SHORTEN_STRATEGY=truncate_to_unique
   # Replace removed segment suffixes with this symbol.
   typeset -g POWERLEVEL9K_SHORTEN_DELIMITER=
   # Color of the shortened directory segments.
-  typeset -g POWERLEVEL9K_DIR_SHORTENED_FOREGROUND=204
+  typeset -g POWERLEVEL9K_DIR_SHORTENED_FOREGROUND=006
   # Color of the anchor directory segments. Anchor segments are never shortened. The first
   # segment is always an anchor.
-  typeset -g POWERLEVEL9K_DIR_ANCHOR_FOREGROUND=254
+  typeset -g POWERLEVEL9K_DIR_ANCHOR_FOREGROUND=006
   # Display anchor directory segments in bold.
-  typeset -g POWERLEVEL9K_DIR_ANCHOR_BOLD=true
+  typeset -g POWERLEVEL9K_DIR_ANCHOR_BOLD=false
   # Don't shorten directories that contain any of these files. They are anchors.
   local anchor_files=(
     .bzr
@@ -325,21 +325,21 @@
   #   typeset -g POWERLEVEL9K_DIR_WORK_BACKGROUND=4
   #   typeset -g POWERLEVEL9K_DIR_WORK_FOREGROUND=254
   #   typeset -g POWERLEVEL9K_DIR_WORK_SHORTENED_FOREGROUND=250
-  #   typeset -g POWERLEVEL9K_DIR_WORK_ANCHOR_FOREGROUND=255
+  #   typeset -g POWERLEVEL9K_DIR_WORK_ANCHOR_FOREGROUND=006
   #
   #   # Styling for WORK_NOT_WRITABLE.
   #   typeset -g POWERLEVEL9K_DIR_WORK_NOT_WRITABLE_VISUAL_IDENTIFIER_EXPANSION='⭐'
   #   typeset -g POWERLEVEL9K_DIR_WORK_NOT_WRITABLE_BACKGROUND=4
   #   typeset -g POWERLEVEL9K_DIR_WORK_NOT_WRITABLE_FOREGROUND=254
   #   typeset -g POWERLEVEL9K_DIR_WORK_NOT_WRITABLE_SHORTENED_FOREGROUND=250
-  #   typeset -g POWERLEVEL9K_DIR_WORK_NOT_WRITABLE_ANCHOR_FOREGROUND=255
+  #   typeset -g POWERLEVEL9K_DIR_WORK_NOT_WRITABLE_ANCHOR_FOREGROUND=006
   #
   #   # Styling for WORK_NON_EXISTENT.
   #   typeset -g POWERLEVEL9K_DIR_WORK_NON_EXISTENT_VISUAL_IDENTIFIER_EXPANSION='⭐'
   #   typeset -g POWERLEVEL9K_DIR_WORK_NON_EXISTENT_BACKGROUND=4
   #   typeset -g POWERLEVEL9K_DIR_WORK_NON_EXISTENT_FOREGROUND=254
   #   typeset -g POWERLEVEL9K_DIR_WORK_NON_EXISTENT_SHORTENED_FOREGROUND=250
-  #   typeset -g POWERLEVEL9K_DIR_WORK_NON_EXISTENT_ANCHOR_FOREGROUND=255
+  #   typeset -g POWERLEVEL9K_DIR_WORK_NON_EXISTENT_ANCHOR_FOREGROUND=006
   #
   # If a styling parameter isn't explicitly defined for some class, it falls back to the classless
   # parameter. For example, if POWERLEVEL9K_DIR_WORK_NOT_WRITABLE_FOREGROUND is not set, it falls
@@ -504,42 +504,42 @@
   # it will signify success by turning green.
   typeset -g POWERLEVEL9K_STATUS_OK=true
   typeset -g POWERLEVEL9K_STATUS_OK_VISUAL_IDENTIFIER_EXPANSION='✔'
-  typeset -g POWERLEVEL9K_STATUS_OK_FOREGROUND=197
-  typeset -g POWERLEVEL9K_STATUS_OK_BACKGROUND=255
+  typeset -g POWERLEVEL9K_STATUS_OK_FOREGROUND=014
+  typeset -g POWERLEVEL9K_STATUS_OK_BACKGROUND=006
 
   # Status when some part of a pipe command fails but the overall exit status is zero. It may look
   # like this: 1|0.
   typeset -g POWERLEVEL9K_STATUS_OK_PIPE=true
   typeset -g POWERLEVEL9K_STATUS_OK_PIPE_VISUAL_IDENTIFIER_EXPANSION='✔'
-  typeset -g POWERLEVEL9K_STATUS_OK_PIPE_FOREGROUND=197
-  typeset -g POWERLEVEL9K_STATUS_OK_PIPE_BACKGROUND=255
+  typeset -g POWERLEVEL9K_STATUS_OK_PIPE_FOREGROUND=014
+  typeset -g POWERLEVEL9K_STATUS_OK_PIPE_BACKGROUND=006
 
   # Status when it's just an error code (e.g., '1'). No need to show it if prompt_char is enabled as
   # it will signify error by turning red.
   typeset -g POWERLEVEL9K_STATUS_ERROR=true
   typeset -g POWERLEVEL9K_STATUS_ERROR_VISUAL_IDENTIFIER_EXPANSION='✘'
-  typeset -g POWERLEVEL9K_STATUS_ERROR_FOREGROUND=1
-  typeset -g POWERLEVEL9K_STATUS_ERROR_BACKGROUND=255
+  typeset -g POWERLEVEL9K_STATUS_ERROR_FOREGROUND=9
+  typeset -g POWERLEVEL9K_STATUS_ERROR_BACKGROUND=006
 
   # Status when the last command was terminated by a signal.
   typeset -g POWERLEVEL9K_STATUS_ERROR_SIGNAL=true
   # Use terse signal names: "INT" instead of "SIGINT(2)".
   typeset -g POWERLEVEL9K_STATUS_VERBOSE_SIGNAME=false
   typeset -g POWERLEVEL9K_STATUS_ERROR_SIGNAL_VISUAL_IDENTIFIER_EXPANSION='✘'
-  typeset -g POWERLEVEL9K_STATUS_ERROR_SIGNAL_FOREGROUND=1
-  typeset -g POWERLEVEL9K_STATUS_ERROR_SIGNAL_BACKGROUND=255
+  typeset -g POWERLEVEL9K_STATUS_ERROR_SIGNAL_FOREGROUND=9
+  typeset -g POWERLEVEL9K_STATUS_ERROR_SIGNAL_BACKGROUND=006
 
   # Status when some part of a pipe command fails and the overall exit status is also non-zero.
   # It may look like this: 1|0.
   typeset -g POWERLEVEL9K_STATUS_ERROR_PIPE=true
   typeset -g POWERLEVEL9K_STATUS_ERROR_PIPE_VISUAL_IDENTIFIER_EXPANSION='✘'
-  typeset -g POWERLEVEL9K_STATUS_ERROR_PIPE_FOREGROUND=1
-  typeset -g POWERLEVEL9K_STATUS_ERROR_PIPE_BACKGROUND=255
+  typeset -g POWERLEVEL9K_STATUS_ERROR_PIPE_FOREGROUND=9
+  typeset -g POWERLEVEL9K_STATUS_ERROR_PIPE_BACKGROUND=006
 
   ###################[ command_execution_time: duration of the last command ]###################
   # Execution time color.
-  typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_FOREGROUND=197
-  typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_BACKGROUND=253
+  typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_FOREGROUND=014
+  typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_BACKGROUND=006
   # Show duration of the last command if takes at least this many seconds.
   typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_THRESHOLD=3
   # Show this many fractional digits. Zero means round to seconds.
@@ -678,7 +678,7 @@
   # typeset -g POWERLEVEL9K_ASDF_LUA_SHOW_ON_UPGLOB='*.foo|*.bar'
 
   # Java version from asdf.
-  typeset -g POWERLEVEL9K_ASDF_JAVA_FOREGROUND=1
+  typeset -g POWERLEVEL9K_ASDF_JAVA_FOREGROUND=9
   typeset -g POWERLEVEL9K_ASDF_JAVA_BACKGROUND=7
   # typeset -g POWERLEVEL9K_ASDF_JAVA_VISUAL_IDENTIFIER_EXPANSION='⭐'
   # typeset -g POWERLEVEL9K_ASDF_JAVA_SHOW_ON_UPGLOB='*.foo|*.bar'
@@ -869,7 +869,7 @@
 
   ###########[ timewarrior: timewarrior tracking status (https://timewarrior.net/) ]############
   # Timewarrior color.
-  typeset -g POWERLEVEL9K_TIMEWARRIOR_FOREGROUND=255
+  typeset -g POWERLEVEL9K_TIMEWARRIOR_FOREGROUND=006
   typeset -g POWERLEVEL9K_TIMEWARRIOR_BACKGROUND=8
 
   # If the tracked task is longer than 24 characters, truncate and append "…".
@@ -904,14 +904,14 @@
 
   ##################################[ context: user@hostname ]##################################
   # Context color when running with privileges.
-  typeset -g POWERLEVEL9K_CONTEXT_ROOT_FOREGROUND=1
-  typeset -g POWERLEVEL9K_CONTEXT_ROOT_BACKGROUND=253
+  typeset -g POWERLEVEL9K_CONTEXT_ROOT_FOREGROUND=9
+  typeset -g POWERLEVEL9K_CONTEXT_ROOT_BACKGROUND=006
   # Context color in SSH without privileges.
   typeset -g POWERLEVEL9K_CONTEXT_{REMOTE,REMOTE_SUDO}_FOREGROUND=3
-  typeset -g POWERLEVEL9K_CONTEXT_{REMOTE,REMOTE_SUDO}_BACKGROUND=253
+  typeset -g POWERLEVEL9K_CONTEXT_{REMOTE,REMOTE_SUDO}_BACKGROUND=006
   # Default context color (no privileges, no SSH).
   typeset -g POWERLEVEL9K_CONTEXT_FOREGROUND=3
-  typeset -g POWERLEVEL9K_CONTEXT_BACKGROUND=253
+  typeset -g POWERLEVEL9K_CONTEXT_BACKGROUND=006
 
   # Context format when running with privileges: user@hostname.
   typeset -g POWERLEVEL9K_CONTEXT_ROOT_TEMPLATE='%n@%m'
@@ -1061,7 +1061,7 @@
 
   #######################[ go_version: go version (https://golang.org) ]########################
   # Go version color.
-  typeset -g POWERLEVEL9K_GO_VERSION_FOREGROUND=255
+  typeset -g POWERLEVEL9K_GO_VERSION_FOREGROUND=006
   typeset -g POWERLEVEL9K_GO_VERSION_BACKGROUND=2
   # Show go version only when in a go project subdirectory.
   typeset -g POWERLEVEL9K_GO_VERSION_PROJECT_ONLY=true
@@ -1097,7 +1097,7 @@
 
   ##########[ laravel_version: laravel php framework version (https://laravel.com/) ]###########
   # Laravel version color.
-  typeset -g POWERLEVEL9K_LARAVEL_VERSION_FOREGROUND=1
+  typeset -g POWERLEVEL9K_LARAVEL_VERSION_FOREGROUND=9
   typeset -g POWERLEVEL9K_LARAVEL_VERSION_BACKGROUND=7
   # Custom icon.
   # typeset -g POWERLEVEL9K_LARAVEL_VERSION_VISUAL_IDENTIFIER_EXPANSION='⭐'
@@ -1118,7 +1118,7 @@
 
   ####################[ java_version: java version (https://www.java.com/) ]####################
   # Java version color.
-  typeset -g POWERLEVEL9K_JAVA_VERSION_FOREGROUND=1
+  typeset -g POWERLEVEL9K_JAVA_VERSION_FOREGROUND=9
   typeset -g POWERLEVEL9K_JAVA_VERSION_BACKGROUND=7
   # Show java version only when in a java project subdirectory.
   typeset -g POWERLEVEL9K_JAVA_VERSION_PROJECT_ONLY=true
@@ -1176,7 +1176,7 @@
 
   ###############[ jenv: java version from jenv (https://github.com/jenv/jenv) ]################
   # Java color.
-  typeset -g POWERLEVEL9K_JENV_FOREGROUND=1
+  typeset -g POWERLEVEL9K_JENV_FOREGROUND=9
   typeset -g POWERLEVEL9K_JENV_BACKGROUND=7
   # Hide java version if it doesn't come from one of these sources.
   typeset -g POWERLEVEL9K_JENV_SOURCES=(shell local global)
@@ -1614,7 +1614,7 @@
   ################################[ battery: internal battery ]#################################
   # Show battery in red when it's below this level and not connected to power supply.
   typeset -g POWERLEVEL9K_BATTERY_LOW_THRESHOLD=20
-  typeset -g POWERLEVEL9K_BATTERY_LOW_FOREGROUND=1
+  typeset -g POWERLEVEL9K_BATTERY_LOW_FOREGROUND=9
   # Show battery in green when it's charging or fully charged.
   typeset -g POWERLEVEL9K_BATTERY_{CHARGING,CHARGED}_FOREGROUND=2
   # Show battery in yellow when it's discharging.
@@ -1654,14 +1654,14 @@
 
   ####################################[ time: current time ]####################################
   # Current time color.
-  typeset -g POWERLEVEL9K_TIME_FOREGROUND=255
-  typeset -g POWERLEVEL9K_TIME_BACKGROUND=204
+  typeset -g POWERLEVEL9K_TIME_FOREGROUND=006
+  typeset -g POWERLEVEL9K_TIME_BACKGROUND=014
   # Format for the current time: 09:51:02. See `man 3 strftime`.
   typeset -g POWERLEVEL9K_TIME_FORMAT='%D{%I:%M:%S %p}'
   # If set to true, time will update when you hit enter. This way prompts for the past
   # commands will contain the start times of their commands as opposed to the default
   # behavior where they contain the end times of their preceding commands.
-  typeset -g POWERLEVEL9K_TIME_UPDATE_ON_COMMAND=false
+  typeset -g POWERLEVEL9K_TIME_UPDATE_ON_COMMAND=true
   # Custom icon.
   # typeset -g POWERLEVEL9K_TIME_VISUAL_IDENTIFIER_EXPANSION='⭐'
   # Custom prefix.

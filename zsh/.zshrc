@@ -10,6 +10,7 @@ HISTFILE=~/.zsh_history
 HISTSIZE=2000
 SAVEHIST=2000
 setopt autocd beep extendedglob notify
+setopt HIST_IGNORE_SPACE
 bindkey -e
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
@@ -26,3 +27,5 @@ source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+eval $(thefuck --alias)
